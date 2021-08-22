@@ -23,6 +23,7 @@ app.get('/rate',( req,res) => {
 
  PORT = process.env.PORT || 8080
 
- app.listen(PORT, () => {
-     console.log(`Server Running on port http://localhost:${PORT}.`);
- })
+//  app.listen(PORT, () => {
+//      console.log(`Server Running on port http://localhost:${PORT}.`);
+//  })
+exports = module.exports = app
