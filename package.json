@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node server.js"
+    "start": "node app.js",
+    "cover": "nyc --reporter=lcovonly --reporter=html mocha",
+    "XYZ": "nyc  --report--reporter=htmler=text --repoerter=text-lcov mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.4",
     "express": "^4.17.1",
-    "mocha": "^9.1.0"
+    "mocha": "^9.1.0",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2"
   }
 }
